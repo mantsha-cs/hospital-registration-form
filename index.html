@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Patient Registry System</title>
+    <link rel="stylesheet" href="styleapp.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🏥 Hospital Patient Registry System</h1>
+            <p class="subtitle">Register and manage patient records efficiently.</p>
+        </header>
+
+        <form id="registrationForm" action="/register" method="POST">
+            <div class="form-group">
+                <label for="patientName">Patient Full Name</label>
+                <input
+                    type="text"
+                    id="patientName"
+                    name="patientName"
+                    placeholder="e.g., John Doe"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="admissionDate">Date of Admission</label>
+                <input
+                    type="date"
+                    id="admissionDate"
+                    name="admissionDate"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="illness">Illness / Diagnosis</label>
+                <input
+                    type="text"
+                    id="illness"
+                    name="illness"
+                    placeholder="e.g., Chronic Hypertension, Flu"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="register-btn">Register Patient</button>
+        </form>
+
+        <div class="button-area">
+            <a href="/patients" class="view-btn">View Registered Patients</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
